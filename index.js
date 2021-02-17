@@ -8,7 +8,7 @@ app.use(
         origin: 'https://www.michaelboeynaems.com'
     })
 );
-//app.options('*', cors());
+app.options('*', cors());
 
 app.get('/', (req, res) => res.send('This api works.cors'));
 
