@@ -5,7 +5,7 @@ var cors = require('cors');
 app.use(
     cors({
         credentials: true,
-        origin: 'https://app-monir2021.herokuapp.com/'
+        origin: 'https://12sop.netlify.app'
     })
 );
 app.options('*', cors());
