@@ -11,7 +11,7 @@ var cors = require('cors');
 );*/
 app.options('*', cors());
 
-app.get('/', (req, res) => res.send('This api works.cors ,origin changed her'));
+app.get('/', (req, res) => res.send('This api works.cors ,origin changed wihout use cors'));
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('server running on port 3000', '');
