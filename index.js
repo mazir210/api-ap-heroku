@@ -4,16 +4,16 @@ var cors = require('cors');
 
 
 
-app.use(cors())
-/*app.use(
+//app.use(cors())
+app.use(
     cors({
         credentials: true,
         origin: 'https://12sop.netlify.app'
     })
-);*/
+);
 app.options('*', cors());
 
-app.get('/', (req, res) => res.send('This api works.cors ,origin changed wih app.use(cors())'));
+app.get('/', (req, res) => res.send('This api works.cors ,origin changed https://12sop.netlify.app/'));
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('server running on port 3000', '');
